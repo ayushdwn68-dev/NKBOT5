@@ -65,7 +65,7 @@ module.exports.run = async function ({ api, args, event }) {
             const query = args.join(' ');
             if (!query) return api.sendMessage("❌ Please provide a song name or YouTube link!", event.threadID, event.messageID);
 
-            w = await api.sendMessage(`🔍 Searching for: "${query}"`, event.threadID);
+            w = await api.sendMessage(`╔════════════════════╗\n\n🎬  𝑽𝒊𝒅𝒆𝒐 𝑹𝒆𝒒𝒖𝒆𝒔𝒕 𝑹𝒆𝒄𝒆𝒊𝒗𝒆𝒅  🎬\n\n╚════════════════════╝\n\n Song Name :${query}\n\n⏳ 𝑷𝒍𝒆𝒂𝒔𝒆 𝑾𝒂𝒊𝒕 𝑭𝒓𝒊𝒆𝒏𝒅...  \n\n✨ ✦🌎 𝑵𝑲➺𝑩𝑶𝑻 🌎🦋✨ ने आपकी Video Request ले ली है ✅  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n📀 Searching Database... 🔍  \n\n🎞️ Preparing High Quality Video...  \n\n📡 Connecting To Server...  \n\n💾 Processing Request...  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n💡 𝑻𝒊𝒑: Stay Active,  \n\nYour video is on the way 🎥🔥  \n\n⚡ Powered By ➜ ✦🌎 𝑵𝑲➺𝑩𝑶𝑻 🌎🦋🎀  \n\n💖 Admin ➜ ❖ 𝑵𝑲≛𝑬𝑫𝑰𝑻𝑶𝑹 ❖"`, event.threadID);
             const r = await yts(query);
             const videos = r.videos.slice(0, 30);
             const selected = videos[Math.floor(Math.random() * videos.length)];
@@ -82,7 +82,7 @@ module.exports.run = async function ({ api, args, event }) {
 
         // 📩 Send message with stream
         return api.sendMessage({
-            body: `🎬 Title: ${title}\n📺 Quality: ${quality}\n📥 Download: ${shortenedLink}`,
+            body: ` ╔═════════════════╗\n\n 🎥  𝒀𝒐𝒖𝒓 𝑽𝒊𝒅𝒆𝒐 𝑰𝒔 𝑹𝒆𝒂𝒅𝒚 ✅  \n\n╚═════════════════╝\n\n✨ Great News ✨  \n\n✦🌎 𝑵𝑲➺𝑩𝑶𝑻 🌎🦋🎀 ने आपकी Video तैयार कर दी है 🔥  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n📀 Video Found... ✔️  \n\n🎞️ High Quality Uploaded... ✔️  \n\n📡 Server Connection Stable... ✔️  \n\n💾 Processing Completed... ✔️  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n🎬 Here is your requested video ⬇️  \n\n👉 [🎥 Download / Watch Now]\n\n⚡ Thanks For Waiting 💖  \n\n👑 Admin ➜ ❖ 𝑵𝑲≛𝑬𝑫𝑰𝑻𝑶𝑹 ❖🎬 Title: ${title}\n📺 Quality: ${quality}\n📥 Download: ${shortenedLink}`,
             attachment: await global.utils.getStreamFromURL(downloadLink, `${title}.mp4`)
         }, event.threadID, event.messageID);
 
