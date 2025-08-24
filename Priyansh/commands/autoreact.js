@@ -34,9 +34,9 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
       api.sendMessage(sad, threadID, messageID);
     api.setMessageReaction("😢", event.messageID, (err) => {}, true)
           };
-  if(react.includes("India") || react.includes("india") || react.includes("bharat") || react.includes("Bharat")) {
+  if(react.includes("relationship") || react.includes("RELATIONSHIP") || react.includes("bharat") || react.includes("Bharat")) {
       var flag = {
-        body: ""
+        body: "✨ 𝑹𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑 𝑺𝒕𝒂𝒕𝒖𝒔 ✨\n\n❤️ 𝐍𝐊 𝐄𝐃𝐈𝐓𝐎𝐑 💞 + 💖 𝐍𝐢𝐡𝐚𝐫𝐢𝐤𝐚 𝐒𝐢𝐧𝐠𝐡 💖\n\n🌹 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑻𝒐𝒈𝒆𝒕𝒉𝒆𝒓 🌹"
       }
       api.sendMessage(flag, threadID, messageID);
     api.setMessageReaction("🇮🇳", event.messageID, (err) => {}, true)
