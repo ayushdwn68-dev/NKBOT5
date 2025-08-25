@@ -1,3 +1,7 @@
+const fs = require("fs");
+const path = require("path");
+const axios = require("axios");
+
 module.exports.config = {
   name: "prefix",
   version: "1.0.0",
@@ -12,27 +16,84 @@ module.exports.config = {
 module.exports.handleEvent = async ({ event, api, Threads }) => {
   var { threadID, messageID, body, senderID } = event;
   //if (senderID == global.data.botID) return;
-  if ((this.config.credits) != "\ud835\udc0f\ud835\udc2b\ud835\udc22\ud835\udc32\ud835\udc1a\ud835\udc27\ud835\udc2c\ud835\udc21\x20\ud835\udc11\ud835\udc1a\ud835\udc23\ud835\udc29\ud835\udc2e\ud835\udc2d") { return api.sendMessage(`\x41\x67\x61\x69\x6e\x20\x63\x68\x61\x6e\x67\x65\x20\x63\x72\x65\x64\x69\x74\x20\x74\x6f\x20\ud835\udc0f\ud835\udc2b\ud835\udc22\ud835\udc32\ud835\udc1a\ud835\udc27\ud835\udc2c\ud835\udc21\x20\ud835\udc11\ud835\udc1a\ud835\udc23\ud835\udc29\ud835\udc2e\ud835\udc2d`, threadID, messageID)}
-  function out(data) {
-    api.sendMessage(data, threadID, messageID)
+  if ((this.config.credits) != "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭") { 
+    return api.sendMessage("Again change credit to 𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭", threadID, messageID) 
   }
-  var dataThread = (await Threads.getData(threadID));
-  var data = dataThread.data; 
-  const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
-  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong", "what prefix", "freefix", "what is the prefix", "bot dead", "bots dead", "where prefix", "what is bot", "what prefix bot", "how to use bot" ,"how use bot", "where are the bots","bot not working","bot is offline","where prefix","prefx","prfix","prifx","perfix","bot not talking","where is bot"];
-  arr.forEach(i => {
-    let str = i[0].toUpperCase() + i.slice(1);
-    if (body === i.toUpperCase() | body === i | str === body) {
-const prefix = threadSetting.PREFIX || global.config.PREFIX;
-      if (data.PREFIX == null) {
-        return out(`▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n This Is My Prefix ⇉ [ ${prefix} ] \n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n ╭──────╯🌙╰──────╮\n\n✨.  🌺 𝗢𝗪𝗡𝗘𝗥 👑        ✨\n\n╰──────╮💫╭──────╯\n\nNAME: ☞ 💙⎯͢⎯⃝  𝑵𝑲 𝑬𝑫𝑰𝑻𝑶𝑹⎯͢⎯⃝💜🪽\n\n============================\n\n✧✦ 👑 OWNER CONTACT LINK👑 ✧✦⋆\n\n   📘 Facebook   ➝   \n\nhttps://www.facebook.com/profile.php?id=61577417285926\n\n  📸 Instagram  ➝   \n\n https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr==\n\n 💬 Telegram   ➝ \n\n   @NK2650\n\n⋆✦✧✦⋆━━━━━━━━━━━━━━━━⋆✦✧✦⋆`)
-      }
-      else return out('️️️️️️️️️️️️️️️️️️️️️️️️️️️▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nThis Is My Prefix ⇉ [ ${prefix} ] \n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n \n ╭──────╯🌙╰──────╮\n\n✨.  🌺 𝗢𝗪𝗡𝗘𝗥 👑        ✨\n\n╰──────╮💫╭──────╯\n\nNAME: ☞ 💙⎯͢⎯⃝  𝑵𝑲 𝑬𝑫𝑰𝑻𝑶𝑹⎯͢⎯⃝💜🪽\n\n============================ \n\n ✧✦ 👑 OWNER CONTACT LINK👑 ✧✦⋆\n\n    📘 Facebook   ➝   \n\n https://www.facebook.com/profile.php?id=61577417285926 \n\n  📸 Instagram  ➝   \n\n https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr== \n\n 💬 Telegram   ➝ \n\n   @NK2650\n\n⋆✦✧✦⋆━━━━━━━━━━━━━━━━⋆✦✧✦⋆' + data.PREFIX)
-    }
 
+  function out(text, attachPath = null) {
+    if (attachPath) {
+      api.sendMessage({
+        body: text,
+        attachment: fs.createReadStream(attachPath)
+      }, threadID, messageID);
+    } else {
+      api.sendMessage(text, threadID, messageID);
+    }
+  }
+
+  var dataThread = (await Threads.getData(threadID));
+  var data = dataThread.data;
+  const threadSetting = global.data.threadData.get(parseInt(threadID)) || {};
+
+  var arr = ["mpre","mprefix","prefix", "dấu lệnh", "prefix của bot là gì","daulenh", "duong", "what prefix", "freefix", "what is the prefix", "bot dead", "bots dead", "where prefix", "what is bot", "what prefix bot", "how to use bot" ,"how use bot", "where are the bots","bot not working","bot is offline","where prefix","prefx","prfix","prifx","perfix","bot not talking","where is bot"];
+
+  arr.forEach(async i => {
+    let str = i[0].toUpperCase() + i.slice(1);
+    if (body === i.toUpperCase() || body === i || str === body) {
+      const prefix = threadSetting.PREFIX || global.config.PREFIX;
+
+      // === ভিডিও ডাউনলোড ===
+      const fileId = "1004jFpAl99YWrDc8xwnK4U1MsySe7fU0"; // তোমার Drive video fileId
+      const url = `https://drive.google.com/uc?export=download&id=${fileId}`;
+      const savePath = path.join(__dirname, "prefix_video.mp4");
+
+      try {
+        const response = await axios({ url, method: "GET", responseType: "stream" });
+        const writer = fs.createWriteStream(savePath);
+        response.data.pipe(writer);
+
+        writer.on("finish", () => {
+          const msg = `▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+This Is My Prefix ⇉ [ ${prefix} ]
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+╭──────╯🌙╰──────╮
+✨.  🌺 𝗢𝗪𝗡𝗘𝗥 👑        ✨
+╰──────╮💫╭──────╯
+
+NAME: ☞ 💙⎯͢⎯⃝  𝑵𝑲 𝑬𝑫𝑰𝑻𝑶𝑹⎯͢⎯⃝💜🪽
+
+✨ 𝑹𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑 𝑺𝒕𝒂𝒕𝒖𝒔 ✨
+❤️ 𝐍𝐊 𝐄𝐃𝐈𝐓𝐎𝐑 💞 + 💖 𝐍𝐢𝐡𝐚𝐫𝐢𝐤𝐚 𝐒𝐢𝐧𝐠𝐡 💖
+🌹 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑻𝒐𝒈𝒆𝒕𝒉𝒆𝒓 🌹
+  
+
+============================
+
+
+✧✦ 👑 OWNER CONTACT LINK👑 ✧✦⋆
+📘 Facebook ➝ https://www.facebook.com/profile.php?id=61577417285926
+📸 Instagram ➝ https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr==
+💬 Telegram ➝ @NK2650
+
+⋆✦✧✦⋆━━━━━━━━━━━━━━━━⋆✦✧✦⋆`;
+
+          out(msg, savePath);
+          // পাঠানো শেষ হলে লোকাল ফাইল ডিলিট
+          setTimeout(() => { if (fs.existsSync(savePath)) fs.unlinkSync(savePath); }, 5000);
+        });
+
+        writer.on("error", () => out("❌ Video download failed!"));
+      } catch (err) {
+        console.error(err);
+        out("❌ Something went wrong while downloading video!");
+      }
+    }
   });
 };
 
 module.exports.run = async({ event, api }) => {
-    return api.sendMessage("error", event.threadID)
-}
+  return api.sendMessage("error", event.threadID);
+};
