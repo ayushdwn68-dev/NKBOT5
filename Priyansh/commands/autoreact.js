@@ -41,7 +41,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
       api.sendMessage(flag, threadID, messageID);
     api.setMessageReaction("🇮🇳", event.messageID, (err) => {}, true)
           };
-  if(react.includes("gm") || react.includes("GM") || react.includes("good morning") || react.includes("GOOD MORNING") || react.includes("RAM RAM ") || react.includes("ram ram") || react.includes("") || react.includes("eat") || react.includes("") || react.includes("") || react.includes("") || react.includes("") || react.includes("")) {
+  if(react.includes("gm") || react.includes("GM") || react.includes("good morning") || react.includes("GOOD MORNING") || react.includes("RAM RAM ") || react.includes("ram ram")) {
       var heart = {
         body: "╔══════════════════╗\n\n 🌞❖ 𝑮𝑶𝑶𝑫 𝑴𝑶𝑹𝑵𝑰𝑵𝑮 ❖🌞  \n\n╚══════════════════╝\n\n💫 नई सुबह नई रोशनी,  \n\n ✦🌎 𝑵𝑲➺𝑩𝑶𝑻 🌎🦋🎀  \n\n की तरफ़ से आप सभी को  \n\n🌸✨ शुभ प्रभात ✨🌸  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n🌅 Rise & Shine Like Sun ☀️  \n\n💪 Positivity Is Your Power ⚡  \n\n❤️ Smile & Spread Love 💕  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n🔱🙏 भगवान के नाम 🙏🔱  \n\n🌺 जय श्री राम 🌺  \n\n🌸 राधे राधे 🌸  \n\n🕉️ हर हर महादेव 🕉️  \n\n━━━━━━━━━━━━━━━━━━━━━━━\n\n👑 𝑩𝑶𝑻 𝑶𝑾𝑵𝑬𝑹 👑  \n\n╔═════ ▓▓ ࿇💙࿇ ▓▓ ═════╗  \n\n 💜꧁ 𝑵𝑲≛𝑬𝑫𝑰𝑻𝑶𝑹 ꧂💙  \n\n╚═════ ▓▓ ࿇❤️࿇ ▓▓ ═════╝"
       }
