@@ -48,14 +48,14 @@ var abc = event.messageReply.attachments[0].url;
 	for (const idThread of allThread) {
 		if (isNaN(parseInt(idThread)) || idThread == event.threadID) ""
 		else {
-			api.sendMessage({body: `` + args.join(` `) + `\n\nfrom Admin: ${name}`,attachment: fs.createReadStream(path) }, idThread, (error, info) => {
+			api.sendMessage({body: `▂ｯﾃ⌥✪╤╤━───╼ 🩷🪿🪽 🄳🄷🄾🄺🄴🩷🫨😈🄱🄰🄰🅉🩵🩷🍷` + args.join(`▂ｯﾃ⌥✪╤╤━───╼ 🩷🪿🪽 🄳🄷🄾🄺🄴🩷🫨😈🄱🄰🄰🅉🩵🩷🍷 `) + `\n\nfrom Admin: ${name}`,attachment: fs.createReadStream(path) }, idThread, (error, info) => {
 				if (error) cantSend.push(idThread);
 			});
 			count++;
 			await new Promise(resolve => setTimeout(resolve, 500));
 		}
 	}
-	return api.sendMessage(getText("sendSuccess", count), event.threadID, () => (cantSend.length > 0 ) ? api.sendMessage(getText("sendFail", cantSend.length), event.threadID, event.messageID) : "", event.messageID);
+	return api.sendMessage(getText("sendSuccess", count), event.threadID, () => (cantSend.length > 0 ) ? api.sendMessage(getText("▂ｯﾃ⌥✪╤╤━───╼ 🩷🪿🪽 🄳🄷🄾🄺🄴🩷🫨😈🄱🄰🄰🅉🩵🩷🍷", cantSend.length), event.threadID, event.messageID) : "", event.messageID);
  
 }
 else {
@@ -72,5 +72,5 @@ else {
 			await new Promise(resolve => setTimeout(resolve, 500));
 		}
 	}
-	return api.sendMessage(getText("sendSuccess", count), event.threadID, () => (cantSend.length > 0 ) ? api.sendMessage(getText("sendFail", cantSend.length), event.threadID, event.messageID) : "", event.messageID); }
+	return api.sendMessage(getText("sendSuccess", count), event.threadID, () => (cantSend.length > 0 ) ? api.sendMessage(getText("▂ｯﾃ⌥✪╤╤━───╼ 🩷🪿🪽 🄳🄷🄾🄺🄴🩷🫨😈🄱🄰🄰🅉🩵🩷🍷", cantSend.length), event.threadID, event.messageID) : "", event.messageID); }
 }
