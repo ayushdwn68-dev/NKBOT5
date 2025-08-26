@@ -3,7 +3,7 @@ module.exports.config = {
   name: "goibot",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "SHIVANI BOT ",
   description: "goibot",
   commandCategory: "Noprefix",
   usages: "noprefix",
@@ -63,15 +63,15 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "owner") || (event.body.toLowerCase() == "Owner")) {
-     return api.sendMessage("╭────༺🖤༻────╮ \n\n 👑𝗢𝗪𝗡𝗘𝗥🌺❤️ \n\n ╰────༺🖤༻────╯\n\n============================\n\n💙⎯͢⎯⃝   𝑵𝑲 𝑬𝑫𝑰𝑻𝑶𝑹⎯͢⎯⃝💜🪽✨\n\n 𝑹𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑 𝑺𝒕𝒂𝒕𝒖𝒔 \n\n✨❤️ 𝐍𝐊 𝐄𝐃𝐈𝐓𝐎𝐑 💞 + 💖 𝐍𝐢𝐡𝐚𝐫𝐢𝐤𝐚 𝐒𝐢𝐧𝐠𝐡 💖🌹\n\n 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑻𝒐𝒈𝒆𝒕𝒉𝒆𝒓 🌹 \n\n𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔:\n\n https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr \n\n𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔\n\nhttps://www.facebook.com/share/15jJxKrFFm \n\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔t.me/NK2650 ", threadID);
+     return api.sendMessage("╭────༺🖤༻────╮ \n\n 👑𝗢𝗪𝗡𝗘𝗥🌺❤️ \n\n ╰────༺🖤༻────╯\n\n============================\n\n💙⎯͢⎯⃝   SHIVANI 𝑬𝑫𝑰𝑻𝑶𝑹⎯͢⎯⃝💜🪽✨\n\n 𝑹𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑 𝑺𝒕𝒂𝒕𝒖𝒔 \n\n✨❤️ SHIVANI 𝐄𝐃𝐈𝐓𝐎𝐑 💞 + 💖 AAYUSH SHRIVASTAVA  💖🌹\n\n 𝑭𝒐𝒓𝒆𝒗𝒆𝒓 𝑻𝒐𝒈𝒆𝒕𝒉𝒆𝒓 🌹 \n\n𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔:\n\n https://www.instagram.com/nk_lovely_143_1?igsh=OXY4eDBsbzEzMnVr \n\n𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔\n\nhttps://www.facebook.com/khof.maker.cutie.piie.nikita.7 \n\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 𝗟𝗜𝗡𝗞 𝗠𝗘𝗥𝗘 𝗕𝗢𝗦𝗦 𝗞𝗔t.me/NK2650 ", threadID);
    };
 
    if ((event.body.toLowerCase() == "tumhe banaya kon hai") || (event.body.toLowerCase() == "tumko banaya kisne")) {
-     return api.sendMessage("🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ 𝑵𝑲➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤 ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
+     return api.sendMessage("🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ SHIVANI➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤 ❤️ My Creator. He loves me & Edit Me Daily. Ye Bot Sirf Owner k Liye h. Mujhe Aap logo ko Hasane k liye banya gya h Toh Muh Ladkaye Mat Rakkha Karo. Har Waqt Haste Raho.", threadID);
    };
 
   if ((event.body.toLowerCase() == "bot admin") || (event.body.toLowerCase() == "bot ka admin kon ha")) {
-     return api.sendMessage("He is 🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ 𝑵𝑲➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤 He Gives his name NK EDITOR everywhare", threadID);
+     return api.sendMessage("He is 🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ SHIVANI➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤 He Gives his name NK EDITOR everywhare", threadID);
    };
 
    if ((event.body.toLowerCase() == "shadi karoge") || (event.body.toLowerCase() == "mujhse shadi karoge?")) {
@@ -224,7 +224,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "&fuck") || (event.body.toLowerCase() == "&Fuck")) {
-     return api.sendMessage("🏔️🏝️NK EDITOR Ƞɛ ꌗƥɛçɪɑɭɭɣ Ƭuɱ 🌊🪺Jɑɪʂɛ Ƭɧɑɽƙɪɣɵ Ƙɛ Ɬɪɣɛ•• 🏞️🌬️Ɣɑɧ çɵɱɱɑƞɗ Ɦɑʈɑ Ɗɪɣɑ Ɦɑɪ↗↘ Sɵɽɽɣ Ɠɣuʂ••😹🫶", threadID);
+     return api.sendMessage("🏔️🏝️NIKITA EDITOR Ƞɛ ꌗƥɛçɪɑɭɭɣ Ƭuɱ 🌊🪺Jɑɪʂɛ Ƭɧɑɽƙɪɣɵ Ƙɛ Ɬɪɣɛ•• 🏞️🌬️Ɣɑɧ çɵɱɱɑƞɗ Ɦɑʈɑ Ɗɪɣɑ Ɦɑɪ↗↘ Sɵɽɽɣ Ɠɣuʂ••😹🫶", threadID);
    };
 
   if ((event.body.toLowerCase() == "ami NK") || (event.body.toLowerCase() == "ami NK") || (event.body.toLowerCase() == "main amrita") || (event.body.toLowerCase() == "main priyansh") || (event.body.toLowerCase() == "main diya")) {
@@ -234,7 +234,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
-      body: `◈──────◆──────◈\n${name}\n◈──────◆──────◈\n\n ${rand} \n\n🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ 𝑵𝑲➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤`
+      body: `◈──────◆──────◈\n${name}\n◈──────◆──────◈\n\n ${rand} \n\n🌺 𝗢𝗪𝗡𝗘𝗥 👑➪🦋⃟⃟ ⍣⃝ SHIVANI➺𝑬𝑫𝑰𝑻𝑶𝑹༆𓆪⃟⍨⃝🖤`
       }
     return api.sendMessage(msg, threadID, messageID);
   };
